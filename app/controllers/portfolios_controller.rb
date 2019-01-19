@@ -1,5 +1,5 @@
 class PortfoliosController < ApplicationController
-	# before_action :set_blog
+	# before_action :set_blog [:show, :edit, :update, :destroy]
 
 	def index
 		@portfolio_items = Portfolio.all
@@ -44,10 +44,10 @@ class PortfoliosController < ApplicationController
 	def destroy
 		@portfolio_item = Portfolio.find(params[:id])
 
-    @portfolio_item.destroy
+		@portfolio_item.destroy
+		
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Portfolio item was successfully deleted.' }
-      # format.json { head :no_content }
     end
   end
 
