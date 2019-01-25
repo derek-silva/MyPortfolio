@@ -25,18 +25,14 @@ end
 	Portfolio.create!(
 		title: "Portfolio Title #{portfolio_item}",
 		subtitle: "Ruby on Rails",
-		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget volutpat lectus. Donec neque urna, mattis ut fermentum non, iaculis sed est. Vestibulum odio tortor, scelerisque id maximus id, dignissim at turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in magna vitae enim condimentum sollicitudin. Proin lobortis euismod velit. Aenean ac nibh a augue tempus dapibus eu sollicitudin leo. Fusce lorem arcu, tempor a ligula vitae, tincidunt finibus augue. Maecenas tempor odio sit amet molestie congue. Vestibulum porttitor neque dui, sit amet pharetra elit feugiat sit amet.",
-		main_image: "https://via.placeholder.com/600x400",
-		thumb_image: "https://via.placeholder.com/300x200"
+		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget volutpat lectus. Donec neque urna, mattis ut fermentum non, iaculis sed est. Vestibulum odio tortor, scelerisque id maximus id, dignissim at turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in magna vitae enim condimentum sollicitudin. Proin lobortis euismod velit. Aenean ac nibh a augue tempus dapibus eu sollicitudin leo. Fusce lorem arcu, tempor a ligula vitae, tincidunt finibus augue. Maecenas tempor odio sit amet molestie congue. Vestibulum porttitor neque dui, sit amet pharetra elit feugiat sit amet."
 	)
 end
 
 	Portfolio.create!(
 		title: "Portfolio Title",
 		subtitle: "Javascript",
-		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget volutpat lectus. Donec neque urna, mattis ut fermentum non, iaculis sed est. Vestibulum odio tortor, scelerisque id maximus id, dignissim at turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in magna vitae enim condimentum sollicitudin. Proin lobortis euismod velit. Aenean ac nibh a augue tempus dapibus eu sollicitudin leo. Fusce lorem arcu, tempor a ligula vitae, tincidunt finibus augue. Maecenas tempor odio sit amet molestie congue. Vestibulum porttitor neque dui, sit amet pharetra elit feugiat sit amet.",
-		main_image: "https://via.placeholder.com/600x400",
-		thumb_image: "https://via.placeholder.com/300x200"
+		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget volutpat lectus. Donec neque urna, mattis ut fermentum non, iaculis sed est. Vestibulum odio tortor, scelerisque id maximus id, dignissim at turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in magna vitae enim condimentum sollicitudin. Proin lobortis euismod velit. Aenean ac nibh a augue tempus dapibus eu sollicitudin leo. Fusce lorem arcu, tempor a ligula vitae, tincidunt finibus augue. Maecenas tempor odio sit amet molestie congue. Vestibulum porttitor neque dui, sit amet pharetra elit feugiat sit amet."
 	)
 	
 puts "3 Topics Created"
