@@ -34,8 +34,16 @@ end
 		subtitle: "Javascript",
 		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget volutpat lectus. Donec neque urna, mattis ut fermentum non, iaculis sed est. Vestibulum odio tortor, scelerisque id maximus id, dignissim at turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in magna vitae enim condimentum sollicitudin. Proin lobortis euismod velit. Aenean ac nibh a augue tempus dapibus eu sollicitudin leo. Fusce lorem arcu, tempor a ligula vitae, tincidunt finibus augue. Maecenas tempor odio sit amet molestie congue. Vestibulum porttitor neque dui, sit amet pharetra elit feugiat sit amet."
 	)
-	
+
+3.times do |tech|
+	Portfolio.last.technologies.create!(
+		name: "Technology #{tech}",
+		portfolio_id: Portfolio.all.sample.id
+	)
+end
+
 puts "3 Topics Created"
 puts "10 Blogs Created"
 puts "5 Skills Created"
 puts "10 Portfolios Created"
+puts "3 Technologies Created"
