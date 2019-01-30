@@ -15,4 +15,8 @@ module ApplicationHelper
 		end
 	end
 
+	def copyright_generator
+		@copyright = EzCopyrightViewTool::Renderer.copyright("Derek Silva", "All rights reserved")
+	end
+
 end

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/derek-silva/ez_copyright_view_tool
+  revision: 6c96e0fdca842a81e8c2176eae32d3effd95e6d1
+  specs:
+    ez_copyright_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -217,6 +223,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.5)
+  ez_copyright_view_tool!
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.3)

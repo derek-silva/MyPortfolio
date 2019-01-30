@@ -61,3 +61,5 @@ gem 'devise', '~> 4.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'bootstrap', '~> 4.2.1'
+
+gem 'ez_copyright_view_tool', git: 'https://github.com/derek-silva/ez_copyright_view_tool'
