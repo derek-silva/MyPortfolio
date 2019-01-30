@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 	
 	get 'portfolios/javascript', to: 'portfolios#javascript'
 
-  get 'about-me', to: 'pages#about'
+  get 'about', to: 'pages#about'
 	get 'contact', to: 'pages#contact'
 	
 	resources :blogs do
