@@ -163,8 +163,17 @@ body {
 .card-block {
   color: black;
   text-align: left;
+  padding: 7px;
 }
 
 .auth-links a {
   color: black;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.cancel-acct {
+  text-align: center;
 }
