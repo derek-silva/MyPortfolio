@@ -12,6 +12,10 @@ class Portfolio < ApplicationRecord
 		where(subtitle: "Javascript")
 	end
 
+	def self.by_position
+		order("position ASC")
+	end
+
 	scope :ruby_on_rails_porfolio_items, -> {where(subtitle: "Ruby on Rails")}
 
 	after_initialize :set_defaults
