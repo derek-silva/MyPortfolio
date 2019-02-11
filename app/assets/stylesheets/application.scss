@@ -200,10 +200,14 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url("Words.jpg") no-repeat;
+  background: image-url("Love-Coding.jpg") no-repeat;
   background-size: cover;
 }
 
 .app-footer {
   color: white;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
