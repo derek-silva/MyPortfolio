@@ -3,12 +3,20 @@ class PortfoliosController < ApplicationController
 
 	layout "portfolio"
 	
-	access all: [:show, :index, :javascript], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+	access all: [:show, :index, :javascript], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
 	def index
-		@portfolio_items = Portfolio.all
+		@portfolio_items = Portfolio.by_position
 	end
 
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    render :index
+  end
+	
 	def javascript
 		@javascript_portfolio_items = Portfolio.javascript
 	end
