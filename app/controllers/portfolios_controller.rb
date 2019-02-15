@@ -45,14 +45,13 @@ class PortfoliosController < ApplicationController
 	end
 	
 	def update
-
-    respond_to do |format|
-      if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'Portfolio item was successfully updated.' }
-      else
-        format.html { render :edit }
-      end
-    end
+			respond_to do |format|
+				if @portfolio_item.update(portfolio_params)
+					format.html { redirect_to portfolios_path, notice: 'Portfolio item was successfully updated.' }
+				else
+					format.html { render :edit }
+				end
+			end
 	end
 	
 	def destroy
@@ -75,7 +74,9 @@ class PortfoliosController < ApplicationController
 																			:subtitle, 
 																			:main_image,
 																			:thumb_image,
-																			:body, technologies_attributes: [:name])
+																			:body, 
+																			technologies_attributes: [:id, :name, :_destroy]
+																			)
 	end
 
 end
